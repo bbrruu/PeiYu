@@ -1,0 +1,27 @@
+.slider{
+  perspective: 1000px;
+  position: relative;
+  width: 1300px; 
+  height: 700px;
+  overflow: hidden;
+  margin: 0 auto; /* 讓容器水平置中 */
+  border-style: solid;
+  border-color: black;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+  border-right-width: 110px;
+  border-left-width: 110px;
+  margin-top: 75px;
+}
+
+.slider-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持圖片比例，並填滿整個容器 */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-image-container{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
